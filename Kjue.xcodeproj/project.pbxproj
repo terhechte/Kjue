@@ -11,6 +11,8 @@
 		4D5A39FC1B14A0A80006A7B3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D5A39FB1B14A0A80006A7B3 /* Images.xcassets */; };
 		4D5A39FF1B14A0A90006A7B3 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D5A39FD1B14A0A90006A7B3 /* MainMenu.xib */; };
 		4D5A3A0B1B14A0A90006A7B3 /* KjueTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5A3A0A1B14A0A90006A7B3 /* KjueTests.swift */; };
+		4D5A3A151B14A0C10006A7B3 /* Kjue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5A3A141B14A0C10006A7B3 /* Kjue.swift */; };
+		4D5A3A171B14A0D70006A7B3 /* oldcode in Resources */ = {isa = PBXBuildFile; fileRef = 4D5A3A161B14A0D70006A7B3 /* oldcode */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +34,8 @@
 		4D5A3A041B14A0A90006A7B3 /* KjueTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KjueTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D5A3A091B14A0A90006A7B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4D5A3A0A1B14A0A90006A7B3 /* KjueTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KjueTests.swift; sourceTree = "<group>"; };
+		4D5A3A141B14A0C10006A7B3 /* Kjue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Kjue.swift; sourceTree = "<group>"; };
+		4D5A3A161B14A0D70006A7B3 /* oldcode */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = oldcode; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,7 +77,9 @@
 		4D5A39F61B14A0A80006A7B3 /* Kjue */ = {
 			isa = PBXGroup;
 			children = (
+				4D5A3A161B14A0D70006A7B3 /* oldcode */,
 				4D5A39F91B14A0A80006A7B3 /* AppDelegate.swift */,
+				4D5A3A141B14A0C10006A7B3 /* Kjue.swift */,
 				4D5A39FB1B14A0A80006A7B3 /* Images.xcassets */,
 				4D5A39FD1B14A0A90006A7B3 /* MainMenu.xib */,
 				4D5A39F71B14A0A80006A7B3 /* Supporting Files */,
@@ -186,6 +192,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D5A3A171B14A0D70006A7B3 /* oldcode in Resources */,
 				4D5A39FC1B14A0A80006A7B3 /* Images.xcassets in Resources */,
 				4D5A39FF1B14A0A90006A7B3 /* MainMenu.xib in Resources */,
 			);
@@ -205,6 +212,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D5A3A151B14A0C10006A7B3 /* Kjue.swift in Sources */,
 				4D5A39FA1B14A0A80006A7B3 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
