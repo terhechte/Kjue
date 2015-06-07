@@ -12,10 +12,19 @@ import Cocoa
 class AppDelegate: NSObject, NSApplicationDelegate {
 
     @IBOutlet weak var window: NSWindow!
-
-
+    
     func applicationDidFinishLaunching(aNotification: NSNotification) {
-        // Insert code here to initialize your application
+        let n: NSFileHandle = NSFileHandle(forReadingAtPath: "/tmp/test")!
+        let f: KjueFilter = KjueFilter.VnodeFD(fd: UInt(n.fileDescriptor), fflags: [KjueFilter.KjueFilterFlags.VNodeFlags.Attrib, KjueFilter.KjueFilterFlags.VNodeFlags.Attrib], data: 0)
+        let q: KjueQueue = KjueQueue(name: "fileQueue", filter: f)
+        dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0), { () -> Void in
+            println("Listening for file changes")
+            while (true) {
+                for x in q {
+                    println(x)
+                }
+            }
+        })
     }
 
     func applicationWillTerminate(aNotification: NSNotification) {

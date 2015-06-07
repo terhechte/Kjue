@@ -5,6 +5,7 @@
 Currently some abstractions are in place, and nothing is working correctly.
 
 ## Status
+- [ ] add simplified API to get a ready-made queue for a filename/nsurl, etc
 - [ ] make it work again
 - [ ] add tests for varous things
 - [ ] add documentation
